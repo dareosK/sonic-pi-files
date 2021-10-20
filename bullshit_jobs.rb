@@ -18,7 +18,7 @@ arbeit = '/Users/dareosk/code/dareosK/sonic-pi-samples/hans_amf.wav'
 
 live_loop :low do
   use_synth nil
-  play :e2, release: 10, phase: 0.1, wave: 1, amp: 1
+  play :e2, release: 10, phase: 0.1 amp: 1
   sleep 4
 end
 

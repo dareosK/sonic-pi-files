@@ -1,7 +1,8 @@
 # DRONES
 live_loop :drone1 do
-  note = 95
-  with_fx :ixi_techno, phase: 0.5,res: 0.5, amp: 2,mix: 0.8 do |i|
+  notes = (ring 35, 45, 55, 65, 75, 85, 95).tick
+  note = 55
+  with_fx :ixi_techno, phase: 0.5, res: 0.5, amp: 1, mix: 0.8 do |i|
     synth :fm,note: hz_to_midi(note)  ,release: 20
     synth :fm,note: hz_to_midi(note + 2)  ,release: 20
     sleep 8
@@ -33,3 +34,30 @@ end
 
 
 # RAIN / WATER
+
+# TRUMP
+live_loop :drugs do
+  sample drugs, beat_stretch: nil
+  sleep 1
+end
+
+live_loop :dr1gs, sync: :drugs do
+  16.times do
+    sample drugs, beat_stretch: 0.5
+    sleep 0.5
+  end
+end
+
+live_loop :dr2gs, sync: :drugs do
+  32.times do
+    sample drugs, beat_stretch: 0.25
+    sleep 0.25
+  end
+end
+
+live_loop :dr3gs, sync: :drugs do
+  62.times do
+    sample drugs, beat_stretch: 0.125
+    sleep 0.125
+  end
+end
