@@ -9,6 +9,6 @@ end
 ______________________________
 
 live_loop :drizzle_over_sea do
-  sample :ambi_sauna, amp: 0.25
+  sample :ambi_sauna, amp: 0.125, rate: -1
   sleep rrand(0.25, 3)
 end
