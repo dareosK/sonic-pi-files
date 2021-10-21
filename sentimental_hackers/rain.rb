@@ -5,3 +5,10 @@ live_loop :vinyl_drizzle do
     sleep 4
   ##| end
 end
+
+______________________________
+
+live_loop :drizzle_over_sea do
+  sample :ambi_sauna, amp: 0.25
+  sleep rrand(0.25, 3)
+end
