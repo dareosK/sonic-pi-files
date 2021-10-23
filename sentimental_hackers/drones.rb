@@ -1,5 +1,5 @@
 live_loop :drone1 do
-  notes = (ring 35, 45, 55, 65, 75, 85, 95).tick
+  notes = (ring 35, 53, 65, 72).tick.tick
   note = 55
   with_fx :ixi_techno, phase: 0.5, res: 0.5, amp: 1, mix: 0.8 do |i|
     synth :fm,note: hz_to_midi(note) , release: 20
