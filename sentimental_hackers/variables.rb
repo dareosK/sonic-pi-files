@@ -13,6 +13,9 @@ bing = '/Users/dareosk/code/dareosK/sonic-pi-samples/trmp_bing.wav'
 drugs = '/Users/dareosk/code/dareosK/sonic-pi-samples/drugs.wav'
 public_money = '/Users/dareosk/code/dareosK/sonic-pi-samples/public_money.wav'
 vote = '/Users/dareosk/code/dareosK/sonic-pi-samples/vote.wav'
+beat1 = '/Users/dareosk/code/dareosK/sonic-pi-samples/beats/80D-11.wav'
+beat2 = '/Users/dareosk/code/dareosK/sonic-pi-samples/beats/80A-02.wav'
+##| stretch 5 / sleep 3.5 / amp 1 / rpitch 5 / hpf: 70
 play = true
 a = [0, 1, 0, 1,0, 1, 0, 1,0, 1, 0, 1, 0, 1, 0, 1]
 
