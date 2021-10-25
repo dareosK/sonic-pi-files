@@ -9,11 +9,16 @@ live_loop :vinyl_drizzle do
 end
 
 live_loop :sarko do
-  ##| sample sarcoloco, amp: 1, rate: -1
+  ##| sample sarcoloco, amp: 1
   sleep sample_duration sarcoloco
 end
 
 live_loop :hans do
   ##| sample arbeit, beat_stretch: 10, rate: -1, amp: 6
   sleep 10
+end
+
+live_loop :drizzle_over_sea do
+  # sample :ambi_sauna, amp: 0.125, rate: -1
+  sleep rrand(0.25, 3)
 end

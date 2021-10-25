@@ -9,6 +9,7 @@ live_loop :quarter_beat, sync: :full_beat do
 end
 ______________________________
 a = [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+
 live_loop :its_its do
   16.times do |i|
     puts i
